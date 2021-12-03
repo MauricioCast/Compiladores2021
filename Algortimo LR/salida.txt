@@ -1,0 +1,44 @@
+
+		Practica 6: tablaM
+	Simbolo Inicial: S
+	Simbolos No Terminales: SAPQ
+	Simbolos Terminales: Espqa
+	Producciones: 
+	S->E
+	S->sAP
+	P->pASQ
+	Q->SS
+	Q->qPs
+	P->q
+	A->a
+
+
+		.:Primeros:.
+	S	Es
+	A	a
+	P	pq
+	Q	sq
+	E	E
+	s	s
+	p	p
+	q	q
+	a	a
+
+
+		.:Siguientes:.
+	S	$sq
+	A	pqs$
+	P	s$q
+	Q	s$q
+
+
+		.:TablaM de LL(1):.
+	|$	|s	|p	|q	|a	
+_____________________________________________
+S	|1 	|1 2 	|	|1 	|	
+_____________________________________________
+A	|	|	|	|	|7 	
+_____________________________________________
+P	|	|	|3 	|6 	|	
+_____________________________________________
+Q	|	|4 	|	|5 	|	
